@@ -10,8 +10,6 @@ fn main() {
     let  mut proceed_confirmation = String::new();
     std::io::stdin().read_line(&mut proceed_confirmation).unwrap();
 
-    println!("You entered: {}", proceed_confirmation.trim());
-
     if proceed_confirmation.trim() == "y" {
         println!("Starting the setup process...");
         utilidades::review_python_installation();
